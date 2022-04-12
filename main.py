@@ -4,12 +4,6 @@ from functools import partial
 import time
 
 
-# Actual server IP's
-
-# http://185.8.174.140:9000/#!/init/admin
-# http://130.185.76.139:9000/#!/init/admin
-
-
 
 print('''  _____           _        _                    _____ _               _
  |  __ \         | |      (_)                  / ____| |             | |
@@ -47,19 +41,6 @@ def login(session, server):
         print('[-] Portainer server is setup, moving on.  '+url)
 
 
-
-
-    # url = f'http://{server}/api/settings/public'
-    # response = requests.get(url)
-    #
-    # if """AllowHostNamespaceForRegularUsers': True,""" in str(response.json()):
-    #     print('[!] Portainer server not setup yet, saving6 URL! '+url)
-    #     with open('Saved.txt', "a") as f:
-    #         f.write(url+'\n')
-    #         f.close()
-    #
-    # else:
-    #     print('[-] Portainer server is setup, moving on.  '+url)
 
 
 if __name__ == "__main__":
